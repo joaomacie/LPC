@@ -3,17 +3,22 @@
 
 ![Logo da Linguagem Crystal](https://crystal-lang.org/images/crystal_logo.svg)
 
-## 📌 Descrição
-Este projeto faz parte do trabalho da disciplina **[nome da disciplina]** e tem como objetivo apresentar a linguagem de programação **Crystal**.  
-O Crystal é uma linguagem moderna, tipada estaticamente, com sintaxe inspirada em Ruby, mas com desempenho próximo ao de linguagens compiladas como C.  
+## 📖 Introdução
+Crystal é uma linguagem de programação moderna, inspirada na sintaxe do Ruby, mas com foco em **alta performance** e **tipagem estática**. Ela combina a elegância de linguagens dinâmicas com a eficiência de linguagens compiladas.
 
-## 🎯 Objetivos desta etapa
-- Conhecer a história e evolução da linguagem.
-- Entender suas principais características e vantagens.
-- Explorar exemplos básicos de código.
+## 🎯 Objetivos da Linguagem
+- Sintaxe simples e expressiva, semelhante ao Ruby.
+- Compilação para código nativo, garantindo velocidade.
+- Tipagem estática com inferência de tipos.
+- Suporte a concorrência através de *fibers* e *channels*.
 
-## 📅 Status
-✅ Primeira parte do trabalho — **Introdução e pesquisa teórica**.
+## ⚙️ Características Principais
+- **Performance** próxima à do C.
+- **Segurança** com tipagem estática.
+- **Concorrência** eficiente para aplicações modernas.
+- **Produtividade** com sintaxe clara e concisa.
 
----
+## 📌 Conclusão
+Crystal é uma linguagem que busca unir o melhor dos dois mundos: a facilidade de escrever código legível e expressivo, com a velocidade de execução de linguagens compiladas. É uma ótima escolha para quem deseja explorar novas linguagens e construir sistemas robustos.
+
 
