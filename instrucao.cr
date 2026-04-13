@@ -41,7 +41,8 @@ def infixa_para_posfixa(tokens : Array(String)) : Array(String)
 end
 
 def tres_enderecos(expressao : String)
-  partes = expressao.split(" = ")
+  expressao = expressao.strip
+  partes = expressao.split("=", 2)
 
   if partes.size != 2
     puts "Formato invalido. Use algo como: x = a + b * d - c"
@@ -51,7 +52,15 @@ def tres_enderecos(expressao : String)
   destino = partes[0].strip
   conta = partes[1].strip
 
-  tokens = conta.gsub("(", " ( ").gsub(")", " ) ").split
+  if destino.empty? || conta.empty?
+    puts "Formato invalido. Destino ou expressao vazia. Use algo como: x = a + b * d - c"
+    return
+  end
+
+  tokens = conta.gsub("(", " ( ")
+               .gsub(")", " ) ")
+               .gsub(/([+\-\*\/])/, " \\1 ")
+               .split
   posfixa = infixa_para_posfixa(tokens)
 
   pilha = [] of String
@@ -76,4 +85,10 @@ def tres_enderecos(expressao : String)
   puts "#{destino} = #{pilha.last}"
 end
 
-tres_enderecos("x = a + b * d - c")
+print "Digite uma expressao (ex: x = a + b * d - c): "
+entrada = gets
+if entrada.nil? || entrada.strip.empty?
+  puts "Nenhuma expressao informada."
+else
+  tres_enderecos(entrada.chomp)
+end
