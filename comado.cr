@@ -1,7 +1,3 @@
-# Nocoes gerais de Crystal
-#
-# Para executar este arquivo:
-# crystal run comado.cr
 
 # Saida no terminal
 puts "Ola Mundo"
