@@ -1,5 +1,5 @@
 PALAVRAS_RESERVADAS = %w[
-  abstract alias as asm begin break case class def do else elsif end ensure enum extend false for fun if in include instance_sizeof is_a? lib macro module next nil of out pointerof private protected require rescue return select self sizeof struct super then true type typeof union unless until when while with yield
+  abstract alias as asm begin break case class def do else elsif end ensure enum extend false for fun if in include instance_sizeof is_a? lib macro module next nil of out pointerof private protected require rescue return select self sizeof struct super then true type typeof union unless until when while with yield 
 ]
 
 OPERADORES = ["+", "-", "*", "/", "=", "==", "!=", "<", ">", "<=", ">=", "&&", "||", "!", ".", ".."]
